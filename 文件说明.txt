@@ -1,30 +1,44 @@
-.github/
+﻿ci/
+conda/
 docs/
-rqalpha/	项目代码
-tests/ 		测试程序
+etc/		零碎
+tests/
+zipline/	项目代码
 .coveragerc	是Coverage.py（一个代码分析工具）的配置文件；测试覆盖了多少代码。
-.gitignore	是git（版本控制工具）的忽略规则
+.dir-locals.el  Emacs的配置文件
+.dokerignore
+.gitattributes
+.gitignore
 .travis.yml	是持续集成（随时修改构建）工具travis的配置文件
-babel.cfg
-CHANGELOG.rst
+appveyor.yml    Continuous Integration solution for Windows
+AUTHORS
+Dockerfile
+Dockerfile-dev
 MANIFEST.in	打包及分发工具setuptools的清单文件，用来打包非Python文件；
-messages.pot	翻译文件模版messages.pot（用于显示中文），内容是策略层面的提示消息
-requirements-py2.txt
-requirements.txt 依赖关系的说明
+README.rst  	说明
+setup.cfg
 setup.py
-test.py
-README.rst  	广告似的特性说明
+vagrant_init.sh	它是一个用来简化虚拟机配置和管理的命令行工具。
+Vagrantfile
+versioneer.py	自动更新版本号
 
 
 
 
-reStructuredText 是扩展名为.rst的纯文本文件，含义为"重新构建的文本""，也被简称为：RST或reST；是Python编程语言的Docutils项目的一部分，Python Doc-SIG (Documentation Special Interest Group)。该项目类似于Java的JavaDoc或Perl的POD项目。 Docutils 能够从Python程序中提取注释和信息，格式化成程序文档。
+Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal（裸机）、OpenStack 集群和其他的基础应用平台。 
 
-.rst 文件是轻量级标记语言的一种，被设计为容易阅读和编写的纯文本，并且可以借助Docutils这样的程序进行文档处理，也可以转换为HTML或PDF等多种格式，或由Sphinx-Doc这样的程序转换为LaTex、man等更多格式。
+Docker通常用于如下场景：
+- web应用的自动化打包和发布；
+- 自动化测试和持续集成、发布；
+- 在服务型环境中部署和调整数据库或其他的后台应用；（在线？？？？）
+- 从头编译或者扩展现有的OpenShift或Cloud Foundry平台来搭建自己的PaaS环境。
 
-下列软件包将被【卸载】：
-  libpango1.0-0 linux-headers-4.10.0-19 linux-headers-4.10.0-19-generic
-  linux-headers-4.10.0-33 linux-headers-4.10.0-33-generic
-  linux-image-4.10.0-19-generic linux-image-4.10.0-33-generic
-  linux-image-extra-4.10.0-19-generic linux-image-extra-4.10.0-33-generic
-  linux-signed-image-4.10.0-33-generic
+
+软件包(SoftWare Package)是指具有特定的功能，用来完成特定任务的一个程序或一组程序。打包通常要压缩。
+持续集成 就是每次提交后会自动测试。
+OpenShift是红帽的云开发平台即服务（PaaS）
+Cloud Foundry是VMware推出的业界第一个开源PaaS云平台
+PaaS是Platform-as-a-Service的缩写，意思是平台即服务。 把服务器平台作为一种服务提供的商业模式。通过网络进行程序提供的服务称之为SaaS(Software as a Service)，而云计算时代相应的服务器平台或者开发环境作为服务进行提供就成为了PaaS(Platform as a Service)。
+所谓PaaS实际上是指将软件研发的平台（计世资讯定义为业务基础平台）作为一种服务，提交给用户。
+
+软件开发环境(Software Development Environment，SDE)是指在基本硬件和数字软件的基础上，为支持系统软件和应用软件的工程化开发和维护而使用的一组软件，简称SDE。它由软件工具和环境集成机制构成，前者用以支持软件开发的相关过程、活动和任务，后者为工具集成和软件的开发、维护及管理提供统一的支持。

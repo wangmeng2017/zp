@@ -48,7 +48,7 @@ fail if you've never installed any scientific Python packages before.
 
 There are two reasons for the additional complexity:
 
-1. Zipline ships several C extensions that require access to the CPython C API.
+1. Zipline 封装了一些 C extensions that require access to the CPython C API.
    In order to build the C extensions, ``pip`` needs access to the CPython
    header files for your Python installation.
 
@@ -68,9 +68,7 @@ binary dependencies for your specific platform.
 conda
 -----
 
-Another way to install Zipline is via the ``conda`` package manager, which
-comes as part of `Anaconda <http://continuum.io/downloads>`_ or can be
-installed via ``pip install conda``.
+Another way to install Zipline is 通过 the ``conda`` package manager.
 
 Once set up, you can install Zipline from our ``Quantopian`` channel:
 
@@ -84,10 +82,6 @@ Currently supported platforms include:
 -  OSX 64-bit
 -  Windows 64-bit
 
-.. note::
-
-   Windows 32-bit may work; however, it is not currently included in
-   continuous integration tests.
 
 Quickstart
 ==========
@@ -131,12 +125,12 @@ The following code implements a simple dual moving average algorithm.
                long_mavg=long_mavg)
 
 
-You can then run this algorithm using the Zipline CLI. From the command
+You can then run this algorithm using the Zipline CLI（命令行界面）. From the command
 line, run:
 
 .. code:: bash
 
-    $ zipline ingest
+    $ zipline ingest // 吸收; 咽下; 获取（某事物）; 接待; ？？？？？？？？
     $ zipline run -f dual_moving_average.py --start 2011-1-1 --end 2012-1-1 -o dma.pickle
 
 This will download the AAPL price data from `quantopian-quandl` in the
@@ -146,15 +140,10 @@ and analyze from within Python.
 
 You can find other examples in the ``zipline/examples`` directory.
 
-Questions?
-==========
-
-If you find a bug, feel free to `open an issue <https://github.com/quantopian/zipline/issues/new>`_ and fill out the issue template.
-
 Contributing
 ============
 
-All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome. Details on how to set up a development environment can be found in our `development guidelines <http://zipline.io/development-guidelines.html>`_.
+ `development guidelines <http://zipline.io/development-guidelines.html>`_.
 
 If you are looking to start working with the Zipline codebase, navigate to the GitHub `issues` tab and start looking through interesting issues. Sometimes there are issues labeled as `Beginner Friendly <https://github.com/quantopian/zipline/issues?q=is%3Aissue+is%3Aopen+label%3A%22Beginner+Friendly%22>`_ or `Help Wanted <https://github.com/quantopian/zipline/issues?q=is%3Aissue+is%3Aopen+label%3A%22Help+Wanted%22>`_.
 
