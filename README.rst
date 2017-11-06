@@ -138,28 +138,9 @@ specified time range and stream it through the algorithm and save the
 resulting performance dataframe to dma.pickle which you can then load
 and analyze from within Python.
 
-You can find other examples in the ``zipline/examples`` directory.
-
 Contributing
 ============
 
  `development guidelines <http://zipline.io/development-guidelines.html>`_.
 
 If you are looking to start working with the Zipline codebase, navigate to the GitHub `issues` tab and start looking through interesting issues. Sometimes there are issues labeled as `Beginner Friendly <https://github.com/quantopian/zipline/issues?q=is%3Aissue+is%3Aopen+label%3A%22Beginner+Friendly%22>`_ or `Help Wanted <https://github.com/quantopian/zipline/issues?q=is%3Aissue+is%3Aopen+label%3A%22Help+Wanted%22>`_.
-
-Feel free to ask questions on the `mailing list <https://groups.google.com/forum/#!forum/zipline>`_ or on `Gitter <gitter.im/quantopian/zipline>`_.
-
-
-
-.. |Gitter| image:: https://badges.gitter.im/Join%20Chat.svg
-   :target: https://gitter.im/quantopian/zipline?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-.. |version status| image:: https://img.shields.io/pypi/pyversions/zipline.svg
-   :target: https://pypi.python.org/pypi/zipline
-.. |travis status| image:: https://travis-ci.org/quantopian/zipline.png?branch=master
-   :target: https://travis-ci.org/quantopian/zipline
-.. |appveyor status| image:: https://ci.appveyor.com/api/projects/status/3dg18e6227dvstw6/branch/master?svg=true
-   :target: https://ci.appveyor.com/project/quantopian/zipline/branch/master
-.. |Coverage Status| image:: https://coveralls.io/repos/quantopian/zipline/badge.png
-   :target: https://coveralls.io/r/quantopian/zipline
-
-.. _`Zipline Install Documentation` : http://www.zipline.io/install.html
