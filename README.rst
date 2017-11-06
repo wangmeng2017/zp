@@ -1,12 +1,4 @@
-.. image:: https://media.quantopian.com/logos/open_source/zipline-logo-03_.png
-    :target: http://www.zipline.io
-    :width: 212px
-    :align: center
-    :alt: Zipline
-
-=============
-
-|Gitter|
+|Gitter| Gitter 是个聊天工具.
 |version status|
 |travis status|
 |appveyor status|
